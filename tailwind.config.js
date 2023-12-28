@@ -15,7 +15,11 @@ module.exports = {
         _greenText: '#56d024',
       },
       dropShadow: {
-        _text: '10px 10px 20px white',
+        _text: '0px 3px 3px rgb(0 0 0 / 1)',
+      },
+      fontFamily: {
+        chakra: ['var(--font-chakra)'],
+        teko: ['var(--font-teko)'],
       },
     },
   },
