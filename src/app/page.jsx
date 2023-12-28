@@ -3,14 +3,14 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
-      <div className="w-screen h-screen bg-[url('/bg.png')] bg-no-repeat bg-cover bg-center mt-12">
+      <div className="w-screen h-screen bg-[url('/bg.png')] bg-no-repeat bg-cover bg-center">
         <div className='font-chakra text-right text-white font-bold text-5xl italic drop-shadow-_text shadow-black'>
           <div>PNEUS</div>
           <div>EVOLUTION KEVLAR CHADYANG</div>
         </div>
       </div>
 
-      <div className='py-10 w-screen px-5 border-2 border-green-400'>
+      {/* <div className='py-10 w-screen px-5 border-2 border-green-400'>
         <div className='container mx-auto max-w-screen-2xl'>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center overflow-hidden'>
             <div className="relative h-[600px] bg-[url('/bgcycle.png')] bg-no-repeat bg-cover">
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
