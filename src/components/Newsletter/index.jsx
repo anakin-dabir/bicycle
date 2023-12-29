@@ -1,6 +1,6 @@
 export default function Newsletter() {
   return (
-    <div className='w-screen bg-_darkBg absolute mt-96 py-10 text-_greenText'>
+    <div className='w-screen bg-_darkBg py-10 text-_greenText'>
       <div className='container max-w-screen-2xl mx-auto px-4 flex flex-col items-center gap-14 lg:flex-row'>
         <div className='flex flex-col justify-center xl:flex-row items-center gap-2'>
           <span className='text-3xl uppercase'>NEWSLETTER</span>

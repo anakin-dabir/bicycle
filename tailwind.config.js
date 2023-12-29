@@ -20,6 +20,7 @@ module.exports = {
       fontFamily: {
         chakra: ['var(--font-chakra)'],
         teko: ['var(--font-teko)'],
+        roboto: ['var(--font-roboto)'],
       },
     },
   },

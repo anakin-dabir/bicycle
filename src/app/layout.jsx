@@ -1,8 +1,7 @@
-import {Inter, Chakra_Petch, Teko} from 'next/font/google';
+import {Inter, Chakra_Petch, Roboto, Titillium_Web} from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Head from 'next/head';
 
 const inter = Inter({subsets: ['latin'], variable: '--font-inter'});
 const chakra = Chakra_Petch({
@@ -11,10 +10,18 @@ const chakra = Chakra_Petch({
   style: ['italic', 'normal'],
   weight: ['300', '400', '500', '600', '700'],
 });
+const roboto = Roboto({
+  subsets: ['latin'],
+  variable: '--font-roboto',
+  style: ['italic', 'normal'],
+  weight: ['300', '400', '500', '700'],
+});
 
-const teko = Teko({
+const teko = Titillium_Web({
   subsets: ['latin'],
   variable: '--font-teko',
+  style: ['italic', 'normal'],
+  weight: ['200', '300', '400', '600', '700'],
 });
 
 export const metadata = {
@@ -25,16 +32,12 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang='en'>
-      <Head>
-        <meta
-          name='viewport'
-          content='width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, viewport-fit=contain, user-scalable=no'
-        />
-      </Head>
-      <body className={`${chakra.variable} ${inter.className} ${teko.variable}`}>
-        {/* <Navbar /> */}
-        {/* <Footer /> */}
+      <body
+        className={`${chakra.variable} ${teko.variable} ${roboto.variable} ${roboto.className}`}
+      >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

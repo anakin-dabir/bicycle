@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 export default function Footer() {
   return (
     <>
@@ -68,7 +69,8 @@ export default function Footer() {
       </div>
       <div className='bg-_bg flex py-6 px-5 text-xl font-medium'>
         <div className='container text-center mx-auto gap-4 max-w-screen-2xl flex flex-col lg:flex-row justify-between'>
-          <div className='flex gap-2 justify-center'>
+          <div className='flex gap-2 justify-center items-center'>
+            <Image src='/tick.png' width={1000} height={1000} className='h-10 w-10' />
             <div>Site seguro</div>
           </div>
           <div>Todos os direitos reservados - Ciclo Femandes</div>
