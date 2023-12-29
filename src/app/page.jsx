@@ -1,10 +1,12 @@
 import BANNERS_CENTRAIS from '@/components/BANNERS_CENTRAIS';
 import Newsletter from '@/components/Newsletter';
 import Promoções from '@/components/Promoções';
+import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <div className="w-screen h-72 md:h-[600px] lg:h-[700px] bg-[url('/bg.png')] bg-no-repeat bg-cover bg-center relative">
+      <div className='w-screen h-72 md:h-[600px] lg:h-[700px]  bg-no-repeat bg-cover bg-center relative'>
+        <Image src='/bg.png' fill={true} priority />
         <div className='flex flex-col gap-2 pr-2 lg:pr-10 w-full absolute top-1/3 -translate-y-1/3'>
           <div className='font-chakra text-right  text-white font-bold text-xl md:text-5xl italic drop-shadow-_text'>
             <div>PNEUS</div>

@@ -19,9 +19,10 @@ export default function Navbar() {
           <Image
             src='/logo.png'
             className='h-[92px] w-[182px]'
-            width={1000}
-            height={1000}
+            width={100}
+            height={100}
             alt='logoImage'
+            priority
           />
         </div>
         <ResponsiveNav links={links} />
