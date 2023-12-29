@@ -15,12 +15,12 @@ export default function Navbar() {
   return (
     <>
       <nav className='w-screen  bg-_darkBg flex justify-between px-5 z-10'>
-        <div className='py-3'>
+        <div className='py-3 self-center'>
           <Image
             src='/logo.png'
             className='h-[92px] w-[182px]'
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
             alt='logoImage'
             priority
           />
