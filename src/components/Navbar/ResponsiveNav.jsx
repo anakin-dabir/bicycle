@@ -72,6 +72,7 @@ export default function ResponsiveNav({links}) {
                       height={10000}
                       alt={link.name}
                       className={`${link.style} h-6 w-7 invert`}
+                      loading='lazy'
                     />
                     <p>{link.name}</p>
                   </div>
