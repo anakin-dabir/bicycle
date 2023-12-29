@@ -31,8 +31,8 @@ export default function ResponsiveNav({links}) {
 
       <Sidebar links={links} isOpen={isOpen} toggleSidebar={toggleSidebar} />
 
-      <div className='hidden xl:flex gap-10'>
-        <div className='flex flex-col flex-1 gap-5 py-2'>
+      <div className='hidden xl:flex gap-10 2xl:gap-40'>
+        <div className='flex flex-col gap-5 py-2'>
           <div className='box-center gap-6'>
             <div className='relative w-[600px]'>
               <input
